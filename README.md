@@ -44,3 +44,27 @@ To make the installation automated and scalable across thousands of corporate en
 
    # Execute the automated deployment script
    .\install_agent.ps1
+3.Enter your active Wazuh Manager IP and preferred unique agent identity at the prompts. The script automatically detects      the environment, downloads, installs, configures, and starts the system service (WazuhSvc).
+4.🔬 Proof of Concept & Validation (Live Dashboard)
+Once the service started successfully, a secure handshake was established with the Kali Linux Manager. The endpoint status immediately changed to Active on the central security console.
+
+🖼️ Live Monitoring Screen Overview:
+Below are the official verifications and structural layout of the live deployment:
+
+Figure 1: Wazuh SIEM Dashboard confirming the 'Active' and healthy connection status of the Windows Endpoint.
+
+Figure 2: Real-time security events, log streams, and system integrity indicators actively parsing into the indexer.
+
+📁 Repository Structure
+install_agent.ps1 - Professional automated deployment script with dynamic user input features.
+
+README.md - Enterprise-grade documentation of the entire deployment lifecycle.
+
+Screenshot (942).png & Screenshot (943).png - Visual verification files for active lab assessment.
+
+👨‍💻 Author & Project Owner
+Name: Toriqul Islam
+
+Student ID: 2023200500078
+
+Specialization: Cyber Security & Network Defense
