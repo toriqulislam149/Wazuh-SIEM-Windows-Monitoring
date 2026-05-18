@@ -55,7 +55,7 @@ Figure 1: Wazuh SIEM Dashboard confirming the 'Active' and healthy connection st
 
 Figure 2: Real-time security events, log streams, and system integrity indicators actively parsing into the indexer.
 
-📁 Repository Structure
+📁 Repository Structure:  
 install_agent.ps1 - Professional automated deployment script with dynamic user input features.
 
 README.md - Enterprise-grade documentation of the entire deployment lifecycle.
@@ -63,6 +63,7 @@ README.md - Enterprise-grade documentation of the entire deployment lifecycle.
 Screenshot (942).png & Screenshot (943).png - Visual verification files for active lab assessment.
 
 👨‍💻 Author & Project Owner
+
 Name: Toriqul Islam
 
 Student ID: 2023200500078
