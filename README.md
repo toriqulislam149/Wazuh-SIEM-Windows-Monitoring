@@ -55,8 +55,11 @@ Figure 1: Wazuh SIEM Dashboard confirming the 'Active' and healthy connection st
 
 Figure 2: Real-time security events, log streams, and system integrity indicators actively parsing into the indexer.
 
-📁 Repository Structure:  
-install_agent.ps1 - Professional automated deployment script with dynamic user input features.
+📁 Repository Structure:
+
+install_wazuh_server.sh - Fully automated deployment and firewall configuration script for Kali Linux Server.
+
+install_agent.ps1 - Professional automated deployment script for Windows Agent with dynamic user input features.
 
 README.md - Enterprise-grade documentation of the entire deployment lifecycle.
 
