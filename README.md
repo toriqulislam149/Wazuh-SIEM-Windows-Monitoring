@@ -1,17 +1,17 @@
-# 🛡️ Enterprise SIEM Deployment: Windows 10 Endpoint Monitoring via Wazuh
+# 🛡️ Enterprise SIEM Deployment: Centralized Windows Endpoint Monitoring via Wazuh
 
-An advanced Cyber Security and Security Information and Event Management (SIEM) project demonstrating central log management, real-time threat detection, and endpoint monitoring using **Wazuh SIEM Server** deployed on Kali Linux and a **Wazuh Agent** on a Windows 10 Enterprise Endpoint.
+An advanced Cyber Security and Security Information and Event Management (SIEM) project demonstrating central log management, real-time threat detection, and endpoint monitoring using **Wazuh SIEM Server** deployed on Kali Linux and a **Wazuh Agent** deployed on a Windows Endpoint (Supports Windows 10, Windows 11, and Windows Server).
 
 ---
 
 ## 📊 Project Architecture & Topology
 
-This project establishes a secure, centralized monitoring pipeline where the security events from the Windows endpoint are collected, shipped, and analyzed by the Wazuh manager.
+This project establishes a secure, centralized monitoring pipeline where the security events from any Windows platform are collected, shipped, and analyzed by the Wazuh manager.
 
 * **SIEM Manager Platform:** Kali Linux 2026
 * **SIEM Manager Local IP:** `192.168.0.167`
-* **Monitored Endpoint:** Windows 10 Pro / Enterprise (VMware Environment)
-* **Endpoint Agent Name:** `Toriq10`
+* **Monitored Endpoint:** Windows OS (10 / 11 / Server OS Environments)
+* **Endpoint Agent Name:** Dynamic (e.g., `Toriq10`)
 * **Wazuh Software Version:** `v4.9.2` (Latest Stable Release)
 * **Communication Ports:** `1514 (UDP/TCP)` for Log Collection & `1515 (TCP)` for Registration
 
@@ -20,7 +20,7 @@ This project establishes a secure, centralized monitoring pipeline where the sec
 ## 🚀 Key Features Implemented
 
 * **Centralized Log Collection:** Real-time shipping of Windows Security, Application, and System Event Logs.
-* **Automated PowerShell Deployment:** Created a dynamic script with runtime inputs for scalable enterprise deployment.
+* **Automated PowerShell Deployment:** Created a dynamic script with runtime inputs for scalable enterprise deployment across any Windows machine.
 * **File Integrity Monitoring (FIM):** Tracks unauthorized modifications to critical system files.
 * **Active Response Ready:** Configured to block or alert against brute-force attacks and registry tampering.
 
@@ -34,9 +34,9 @@ This project establishes a secure, centralized monitoring pipeline where the sec
 3. Configured the internal firewall rules to allow traffic on ports `1514` and `1515`.
 
 ### Phase 2: Dynamic Windows Agent Deployment
-To make the installation automated and scalable across thousands of corporate endpoints, a custom script was engineered.
+To make the installation automated and scalable across thousands of corporate endpoints without modifying the code, a custom script was engineered.
 
-1. Open **Windows PowerShell** as an Administrator.
+1. Open **Windows PowerShell** on the target machine as an Administrator.
 2. Run the dynamic automation script located in this repository (`install_agent.ps1`):
    ```powershell
    # Set execution policy for the session
